@@ -25,10 +25,12 @@
 .input-data {
    width: 39rem;
    border: none;
+   padding-left: 10px;
 }
 .add-button {
     padding: 6px 50px;
     border: none;
     background-color: #d9d9d9;
     color: #555;
+    cursor: pointer;
 }
