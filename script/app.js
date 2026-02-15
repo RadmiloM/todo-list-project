@@ -16,7 +16,6 @@ addBtn.addEventListener('click', function() {
     listItem.classList.add('list-item');
     listItem.textContent = inputData.value;
     listItem.style.cursor = 'pointer';
-    listItem.style.backgroundColor = '#f9f9f9';
     listItem.style.padding = '10px 15px';
 
     closeBtn.addEventListener('mouseenter', function() {
@@ -33,12 +32,9 @@ addBtn.addEventListener('click', function() {
     closeBtn.addEventListener('click', function() {
         listContainer.removeChild(listItem);
     })
-
-    listItem.addEventListener('mouseenter', function() {
-        listItem.style.backgroundColor = '#ddd';
-    });
-    listItem.addEventListener('mouseleave', function() {
-        listItem.style.backgroundColor = '#f9f9f9'
+    
+    listItem.addEventListener('click', function() {
+        listItem.classList.toggle('button-clicked');
     })
     inputData.value = '';
 })

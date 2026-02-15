@@ -43,4 +43,13 @@
 
 .list-item {
     position: relative;
+    background-color: #f9f9f9;
+}
+
+.list-item:hover {
+    background: #ddd;
+}
+
+.list-item.button-clicked {
+    background-color: #888
 }
