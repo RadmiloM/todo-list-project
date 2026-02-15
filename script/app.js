@@ -19,6 +19,14 @@ addBtn.addEventListener('click', function() {
     listItem.style.backgroundColor = '#f9f9f9';
     listItem.style.padding = '10px 15px';
 
+    closeBtn.addEventListener('mouseenter', function() {
+        closeBtn.style.backgroundColor = '#f44336';
+    })
+
+    closeBtn.addEventListener('mouseleave', function() {
+        closeBtn.style.backgroundColor = '#f9f9f9';
+    })
+
     listItem.append(closeBtn);
     listContainer.append(listItem);
 
