@@ -15,7 +15,6 @@ addBtn.addEventListener('click', function () {
 
     listItem.classList.add('list-item');
     listItem.textContent = inputData.value;
-    console.log(inputData.value);
     listItem.style.cursor = 'pointer';
     listItem.style.padding = '10px 15px';
 
