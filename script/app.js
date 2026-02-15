@@ -24,7 +24,7 @@ addBtn.addEventListener('click', function() {
     })
 
     closeBtn.addEventListener('mouseleave', function() {
-        closeBtn.style.backgroundColor = '#f9f9f9';
+        closeBtn.style.backgroundColor = 'transparent';
     })
 
     listItem.append(closeBtn);
