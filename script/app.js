@@ -9,12 +9,19 @@ addBtn.addEventListener('click', function() {
         alert('You must write something!')
     }
     const listItem = document.createElement('li');
+    const closeBtn = document.createElement('span');
+    closeBtn.classList.add('close-button');
+    closeBtn.innerHTML = '&times;';
+
+    listItem.classList.add('list-item');
     listItem.textContent = inputData.value;
     listItem.style.cursor = 'pointer';
     listItem.style.backgroundColor = '#f9f9f9';
     listItem.style.padding = '10px 15px';
-    listItem.style.hover
+
+    listItem.append(closeBtn);
     listContainer.append(listItem);
+
     listItem.addEventListener('mouseenter', function() {
         listItem.style.backgroundColor = '#ddd';
     });
