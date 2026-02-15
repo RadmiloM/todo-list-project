@@ -30,6 +30,10 @@ addBtn.addEventListener('click', function() {
     listItem.append(closeBtn);
     listContainer.append(listItem);
 
+    closeBtn.addEventListener('click', function() {
+        listContainer.removeChild(listItem);
+    })
+
     listItem.addEventListener('mouseenter', function() {
         listItem.style.backgroundColor = '#ddd';
     });
